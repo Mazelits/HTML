@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA Y FORMULARIO</title>
+    <link rel="stylesheet" href="/Semana 4/CSS/Contactos.css">
+</head>
+<body style="background-color:gray;">
+    
+    <header>
+        <img src="/Semana 4/IMG/incap.png" width="100" height="100" alt="Incap">
+        <h1>FORMULARIO Y LISTAS EN HTML</h1>
+    </header>
+    <nav>
+    <ul>
+        <li>Home</li>
+        <li>Productos</li>
+        <li>Servicios</li>
+        <li>Contacto</li>
+    </ul>
+</nav>
+<section>
+    <form action="datos.php">
+        
+        <fieldset>
+            <!-- Seccion Nombre -->
+            <label>Nombre Completo</label>
+            <input name="nombre" type="text" placeholder="Ingrese su nombre completo" required> 
+            <br><br>
+            
+            <!-- Seccion Correo -->
+            <label>E-mail</label>
+            <input name="email" type="email" placeholder="Ingrese su correo" required>
+            <br><br>
+        
+            <!-- Seccion Contraseña -->
+            <label>Contraseña</label>
+            <input name="Contraseña" type="password" placeholder="Ingrese su Contraseña" required>
+            <br><br>
+
+            <!-- Seccion Hobbies -->
+            <label>Selecciona tus hobbies:
+            </label>
+            <hr>
+                <input name="cine" type="checkbox"> Cine<br>
+                <input name="lectura" type="checkbox"> Lectura<br> 
+                <input name="Deporte" type="checkbox"> Deporte<br> 
+                <br><br>
+                
+            <!-- Seccion Estado civil -->
+                <label>Estado Civil:</label><br>
+
+                <input name="estcivil" type="radio" value="Casado">Casado <br>
+                <input name="estcivil" type="radio" value="Soltero">Soltero <br>
+                <input name="estcivil" type="radio" value="Viudo">Viudo/a <br>
+                <br>
+                <br>
+
+            <!-- Seleccionar opcion lista -->
+                <label>PROGRAMAS TECNICOS:</label>
+                <Select name="Select">
+                    <option>Seleccione programa...</option>
+                    <option>Sistemas</option>
+                    <option>Diseño Grafico</option> 
+                    <option>Contabilidad</option>
+                </Select>
+            <br><br>
+            <center><label>Tu comentario</label><br>
+                    <textarea name="mensaje" cols="40" rows="5"></textarea>
+        </fieldset>
+        <br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+        <br>
+        <br>
+    </form>
+</section>
+        <footer>
+    Derechos reservados &copy;2023 &#64; Miguel
+        </footer>
+    </body>
+</html>
